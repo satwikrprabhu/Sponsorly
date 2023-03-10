@@ -10,13 +10,16 @@ const Navbar = () => {
 
 
   return (
-    <div className='flex justify-between items-center max-w-[1240px] mx-auto px-5 h-20 text-white'>
-        <h1 className='w-full text-[2rem] z-50 text-green-500 md:text-4xl font-bold'>SPONSORLY</h1>
+    <div className='flex justify-between items-center max-w-[1240px] mx-auto px-4 h-20 text-white'>
+       <div className='w-full text-[2rem] z-50 text-green-500 md:text-4xl font-bold flex items-center'> 
+       <img src="../public/siteiconlogo.png" alt="logo of the website" className='w-8 h-8'/>
+       <h1 className='ml-2'>SPONSORLY</h1></div>
+
         <ul className='hidden md:flex font-semibold'>
-          <li className='p-6 hover:text-green-0 cursor-pointer duration-200'>Home</li>
-          <li className='p-6 hover:text-green-0 cursor-pointer duration-200'>About</li>
-          <li className='p-6 hover:text-green-0 cursor-pointer duration-200'>Contact</li>
-          <li className='p-6 hover:text-green-0 cursor-pointer duration-200'>Services</li>
+          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>Home</li>
+          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>About</li>
+          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>Contact</li>
+          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>Services</li>
         </ul>
         <div className='font-Codec'><LoginButton/></div>
         
