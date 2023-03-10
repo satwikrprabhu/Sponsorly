@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center max-w-[1240px] mx-auto px-4 h-20 text-white'>
        <div className='w-full text-[2rem] z-50 text-green-500 md:text-4xl font-bold flex items-center'> 
-       <img src="../public/siteiconlogo.png" alt="" className='w-8 h-8'/>
+       <img src="../public/siteiconlogo.png" alt="logo of the website" className='w-8 h-8'/>
        <h1 className='ml-2'>SPONSORLY</h1></div>
 
         <ul className='hidden md:flex font-semibold'>
