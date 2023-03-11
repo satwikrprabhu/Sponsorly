@@ -7,11 +7,9 @@ export default function Homepage() {
     <p className="tracking-widest text-white text-sm md:text-base text-left font-medium mb-8 md:mb-12">NOW ADVERTISE YOUR PRODUCTS ON SOCIAL MEDIA WITH SPONSORLY</p>
     <h1 className="text-green-500 text-4xl md:text-6xl lg:text-8xl font-bold text-left mb-6 md:mb-12">Ready To Connect?</h1>
     <p className="text-white text-sm md:text-base text-left tracking-widest font-normal mb-6 md:mb-12">Boost your social media career with us Unleash the influencer in you Make the best of your content</p>
-    <button className="border-2 border-green-500 text-green-500 px-6 py-2 text-xs md:text-sm font-bold rounded-full hover:text-green-100 justify-center block">Let's Connect</button>
+    <button className="border-2 border-green-500 text-green-500 px-6 py-2 text-xs md:text-sm font-bold rounded-full hover:bg-green-300 justify-center block">Let's Connect</button>
   </div>
 </div>
-
-
 
 <div className='mt-8 md:mt-32 mx-auto flex flex-col md:flex-row items-center'>
   <div className='md:w-1/4 flex justify-center'>
@@ -22,34 +20,9 @@ export default function Homepage() {
     <p className='text-white text-lg tracking-widest my-8 md:my-12 font-semibold text-justify text-center md:text-left md:pr-14'>
       Sponsorly is a user-friendly website where people can connect with content creators and promote their products, business, or pages.
     </p>
-    <button className='mx-auto mt-6 md:mt-8 bg-green-500 px-4 py-2 text-primary font-bold rounded-full'>INFO</button>
+    <button className='mx-auto mt-6 md:mt-8 bg-green-500 px-4 py-2 text-primary font-bold rounded-full hover:bg-green-300'>INFO</button>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <div className="flex flex-col md:flex-row">
   <div className="md:w-2/4">
@@ -58,7 +31,7 @@ export default function Homepage() {
       We build meaningful relationships between brands and creators. This platform provides a space where brands can easily connect with network of active influencers.
       Services
     </p>
-    <button className="mx-6 my-4 text-xs border-2 border-green-500 px-4 py-2 text-green-500 font-bold rounded-full hover:bg-black justify-center">Services</button>
+    <button className="mx-6 my-4 text-xs border-2 border-green-500 px-4 py-2 text-green-500 font-bold rounded-full  justify-center hover:bg-green-300">Services</button>
   </div>
   <div className="md:w-2/4 flex justify-center">
     <img src="./images/last.png" className="w-4/5 lg:w-3/5" />
