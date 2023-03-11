@@ -1,6 +1,7 @@
 import React from 'react'
 import siteiconlogo from '/siteiconlogo.png'
 import {FaInstagram,FaFacebook,FaGithub,FaLinkedin} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 export default function Footer() {
   return (
     <>
@@ -42,9 +43,9 @@ export default function Footer() {
 
         <div className='flex flex-col md:flex-row justify-between items-center  max-w-[1240px] mx-auto px-4 pb-10'> 
 
-      <div className='text-3xl text-green-500 font-bold flex items-center justify-center py-4 cursor-pointer'>
+      <Link to='/' className='text-3xl text-green-500 font-bold flex items-center justify-center py-4 cursor-pointer'>
        <img src={siteiconlogo} alt="logo of the website" className='w-8 h-8'/>
-       <h1 className=''>SPONSORLY</h1></div>
+       <h1 className=''>SPONSORLY</h1></Link>
 
        <div className=''><p className='text-gray-400'>Sponsorly@2023 All rights reserved</p></div>
 
