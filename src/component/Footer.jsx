@@ -47,7 +47,7 @@ export default function Footer() {
        <img src={siteiconlogo} alt="logo of the website" className='w-8 h-8'/>
        <h1 className=''>SPONSORLY</h1></Link>
 
-       <div className=''><p className='text-gray-400'>Sponsorly@2023 All rights reserved</p></div>
+       <div className=''><p className='text-gray-400 text-center'>Sponsorly@2023 All rights reserved</p></div>
 
        <div className='flex justify-evenly md:justify-between items-center space-x-5 text-white py-5'>
           <FaInstagram size={30} className=' hover:text-green-500 cursor-pointer'/>
