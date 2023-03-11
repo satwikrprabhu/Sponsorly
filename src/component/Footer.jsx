@@ -1,30 +1,63 @@
 import React from 'react'
-
+import siteiconlogo from '/siteiconlogo.png'
+import {FaInstagram,FaFacebook,FaGithub,FaLinkedin} from 'react-icons/fa'
 export default function Footer() {
   return (
+    <>
+    <div className='max-w-[1240px] mx-auto py-12 px-4 grid lg:grid-cold-3 gap-8 text-gray-300'>
+      
+        <div className='lg:col-span-3 flex justify-between mt-6'>
+        <div>
+          <h6 className='font-bold text-gray-300'>Solutions</h6>
+          <ul>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Analytics</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Marketing</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Commerce</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Insights</li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 className='font-bold text-gray-300 '>Company</h6>
+          <ul>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Pricing</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Documentation</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Guides</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Analysis</li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 className='text-gray-300 font-bold'>Research</h6>
+          <ul>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Info</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Creation</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Innovate</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Ideas</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+
+
+        <div className='flex flex-col md:flex-row justify-between items-center  max-w-[1240px] mx-auto px-4 pb-10'> 
+
+      <div className='text-3xl text-green-500 font-bold flex items-center justify-center py-4 cursor-pointer'>
+       <img src={siteiconlogo} alt="logo of the website" className='w-8 h-8'/>
+       <h1 className=''>SPONSORLY</h1></div>
+
+       <div className=''><p className='text-gray-400'>Sponsorly@2023 All rights reserved</p></div>
+
+       <div className='flex justify-evenly md:justify-between items-center space-x-5 text-white py-5'>
+          <FaInstagram size={30} className=' hover:text-green-500 cursor-pointer'/>
+          <FaFacebook size={30} className=' hover:text-green-500 cursor-pointer'/>
+          <FaLinkedin size={30} className=' hover:text-green-500 cursor-pointer'/>
+          <FaGithub size={30} className=' hover:text-green-500 cursor-pointer'/>
+        </div>
+        
+        </div>
     
-
-    <div className='flex flex-col md:flex-row md:justify-between md:items-center mt-10'>
-  <div className='basis-1/3 text-white text-xl mx-10 justify-start p-10'>
-    <h1>Contact Us</h1>
-    <p>satwik prabhu</p>
-    <p>Email:satwikprabhu@gmail.com</p>
-    <p>98786567434</p>
-  </div>
-  <div className='basis-1/3 text-white text-xl justify-center p-10'>
-    <p>Get In Touch</p>
-    <img src="./images/sp.png" alt="Get In Touch" className="mx-auto" />
-  </div>
-  <div className='basis-1/3 text-white justify-end p-10 mx-10'>
-    <p className='pb-4 pl-4'>Follow Us</p>
-    <div className='flex space-x-4'>
-      <img src="./images/fb.png" alt="Facebook" className="w-6 h-6" />
-      <img src="./images/insta.png" alt="Instagram" className="w-6 h-6" />
-      <img src="./images/twit.png" alt="Twitter" className="w-6 h-6" />
-    </div>
-  </div>
-</div>
-
+    </>
 
   )
 }

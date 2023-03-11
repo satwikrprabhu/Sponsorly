@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import LoginButton from './LoginButton'
+import {NavLink,Link} from 'react-router-dom'
 import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
 import siteiconlogo from '/siteiconlogo.png'
 const Navbar = () => {
@@ -16,13 +17,13 @@ const Navbar = () => {
        <img src={siteiconlogo} alt="logo of the website" className='w-8 h-8'/>
        <h1 className='ml-2'>SPONSORLY</h1></div>
 
-        <ul className='hidden md:flex font-semibold'>
-          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>Home</li>
-          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>About</li>
-          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>Contact</li>
-          <li className='p-5 hover:text-green-0 cursor-pointer duration-200'>Services</li>
+        <ul className='hidden md:flex font-semibold '>
+          <NavLink to='/' className='p-5 hover:text-green-0 cursor-pointer duration-200'>Home</NavLink>
+          <NavLink to='about' className='p-5 hover:text-green-0 cursor-pointer duration-200'>About</NavLink>
+          <NavLink to='contact' className='p-5 hover:text-green-0 cursor-pointer duration-200'>Contact</NavLink>
+          <NavLink to='services' className='p-5 hover:text-green-0 cursor-pointer duration-200'>Services</NavLink>
         </ul>
-        <div className='font-Codec'><LoginButton/></div>
+        <Link to='login' className='font-Codec'><LoginButton/></Link>
         
 
 
