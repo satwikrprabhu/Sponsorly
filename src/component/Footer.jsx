@@ -50,10 +50,10 @@ export default function Footer() {
        <div className=''><p className='text-gray-400 text-center'>Sponsorly@2023 All rights reserved</p></div>
 
        <div className='flex justify-evenly md:justify-between items-center space-x-5 text-white py-5'>
-          <FaInstagram size={30} className=' hover:text-green-500 cursor-pointer'/>
-          <FaFacebook size={30} className=' hover:text-green-500 cursor-pointer'/>
-          <FaLinkedin size={30} className=' hover:text-green-500 cursor-pointer'/>
-          <FaGithub size={30} className=' hover:text-green-500 cursor-pointer'/>
+          <Link to='https://www.instagram.com/finiteloop_club_nmamit/'><FaInstagram size={30} className=' hover:text-green-500 cursor-pointer'/></Link>
+          <Link to='https://www.facebook.com/FiniteLoopClub.Nmamit/'><FaFacebook size={30} className=' hover:text-green-500 cursor-pointer'/></Link>
+          <Link to='https://www.linkedin.com/showcase/finite-loop-club'><FaLinkedin size={30} className=' hover:text-green-500 cursor-pointer'/></Link>
+          <Link to='https://github.com/satwikrprabhu'><FaGithub size={30} className=' hover:text-green-500 cursor-pointer'/></Link>
         </div>
         
         </div>
