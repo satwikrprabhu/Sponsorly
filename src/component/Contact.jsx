@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contactpage()  {
   return (
-    <div className="bg-indigo-900">
+    <div className="bg-primary">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div>
