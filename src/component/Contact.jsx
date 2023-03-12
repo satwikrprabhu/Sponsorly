@@ -12,7 +12,7 @@ function Contactpage()  {
             <div className="mt-8 sm:max-w-lg">
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-green-500" aria-setsize={6}>
+                  <label htmlFor="name" className="block text-sm font-semibold text-green-500" aria-setsize={6}>
                     Full name
                   </label>
                   <div className="mt-1">
@@ -26,7 +26,7 @@ function Contactpage()  {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-green-500">
+                  <label htmlFor="email" className="block text-sm font-semibold text-green-500">
                     Email
                   </label>
                   <div className="mt-1">
@@ -40,7 +40,7 @@ function Contactpage()  {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-green-500">
+                  <label htmlFor="message" className="block text-sm font-semibold text-green-500">
                     Message
                   </label>
                   <div className="mt-1">
@@ -55,7 +55,7 @@ function Contactpage()  {
                 <div>
                   <button
                     type="submit"
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex items-center px-6 py-1 border border-transparent text-base font-semibold rounded-full shadow-sm text-black bg-green-1000 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     Send
                   </button>
