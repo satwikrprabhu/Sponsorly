@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center max-w-[1240px] mx-auto px-4 h-20 text-white'>
-       <Link to='/' className='w-full text-[2rem] z-50 text-green-500 md:text-4xl font-bold flex items-center'> 
+       <Link to='/' className='w-full text-[2rem] z-50  md:text-4xl font-bold flex items-center'> 
        <img src={siteiconlogo} alt="logo of the website" className='w-8 h-8'/>
        <h1 className='ml-2'>SPONSORLY</h1></Link>
 
