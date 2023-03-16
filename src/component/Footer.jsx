@@ -31,10 +31,10 @@ export default function Footer() {
         <div>
           <h6 className='text-gray-300 font-bold'>Research</h6>
           <ul>
-           <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to=' https://www.socialmediaexaminer.com/'target="blank">Info</Link></li>
-           <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to=' https://www.kickstarter.com/'target="blank">Creation</Link></li>
-            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to=' https://socialblade.com/'target="blank">Innovate</Link></li>
-            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to=' https://adage.com/'target="blank">Ideas</Link></li>
+           <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://www.socialmediaexaminer.com/'target="blank">Info</Link></li>
+           <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://www.kickstarter.com/'target="blank">Creation</Link></li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://socialblade.com/'target="blank">Innovate</Link></li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://adage.com/'target="blank">Ideas</Link></li>
 
 
           </ul>
