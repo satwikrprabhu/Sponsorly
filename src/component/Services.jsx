@@ -1,20 +1,29 @@
 import React from 'react'
-
+import icon1 from '/icon1.png'
 const Services = () => {
   return (
-    <div className="flex flex-col md:flex-row">
-  <div className="md:w-2/4">
-    <h1 className="text-green-500 text-6xl m-14 font-Codec">Our Services</h1>
-    <p className="text-white text-xl m-14 font-semibold text-justify">
-      We build meaningful relationships between brands and creators. This platform provides a space where brands can easily connect with network of active influencers.
-      Services
-    </p>
-    <button className="mx-6 my-4 text-xs border-2 border-green-500 px-4 py-2 text-green-500 font-bold rounded-full  justify-center hover:text-green-300 hover:border-green-300 ">Services</button>
+    <div class='sm:flex sm:flex-col sm:items-center flex-col'>
+    <div class='text-white px-4 py-8 text-center sm:text-left'>
+      <h1 class='text-3xl font-bold'>How to Start</h1>
+    </div>
+    <div class='grid grid-cols-1 sm:grid-cols-3 gap-8'>
+      <div class='flex flex-col items-center bg-white rounded-lg shadow-lg p-8'>
+        <img src={icon1} alt='' class='w-20 h-20 mb-4' />
+        <h1 class='text-lg font-bold mb-2'>Registration</h1>
+        <p class='text-gray-600 text-center'>Register into our site by giving your information</p>
+      </div>
+      <div class='flex flex-col items-center bg-white rounded-lg shadow-lg p-8'>
+        <img src={icon1} alt='' class='w-20 h-20 mb-4' />
+        <h1 class='text-lg font-bold mb-2'>Complete Profile</h1>
+        <p class='text-gray-600 text-center'>Complete your profile to activate your account</p>
+      </div>
+      <div class='flex flex-col items-center bg-white rounded-lg shadow-lg p-8'>
+        <img src={icon1} alt='' class='w-20 h-20 mb-4' />
+        <h1 class='text-lg font-bold mb-2'>Connect</h1>
+        <p class='text-gray-600 text-center'>You are now ready to start! Send one to one collab requests and more.</p>
+      </div>
+    </div>
   </div>
-  <div className="md:w-2/4 flex justify-center">
-    <img src="./images/last.png" className="w-4/5 lg:w-3/5" />
-  </div>
-</div>
   )
 }
 
