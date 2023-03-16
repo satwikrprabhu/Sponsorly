@@ -2,7 +2,8 @@ import React from 'react'
 import icon1 from '/icon1.png'
 const Services = () => {
   return (
-    <div class='sm:flex sm:flex-col sm:items-center flex-col'>
+    <div class="mx-auto max-w-4xl">
+  <div class='sm:flex sm:flex-col sm:items-center flex-col'>
     <div class='text-white px-4 py-8 text-center sm:text-left'>
       <h1 class='text-3xl font-bold'>How to Start</h1>
     </div>
@@ -24,6 +25,8 @@ const Services = () => {
       </div>
     </div>
   </div>
+</div>
+
   )
 }
 
