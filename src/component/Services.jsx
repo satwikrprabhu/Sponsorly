@@ -7,8 +7,8 @@ const Services = () => {
   return (
     <div class="mx-auto max-w-9xl">
   <div class='sm:flex sm:flex-col sm:items-center flex-col'>
-    <div class='text-white px-4 py-8 text-left sm:text-left'>
-      <h1 class='text-3xl font-bold text-left'>Services</h1>
+    <div class='text-white px-4 py-8 text-center sm:text-left'>
+      <h1 class='text-4xl font-bold text-center'>Services</h1>
     </div>
     <div class='grid grid-cols-1 sm:grid-cols-3 gap-8'>
       <div class='flex flex-col items-center sm:rounded-lg  py-8'>
