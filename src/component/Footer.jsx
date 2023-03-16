@@ -12,7 +12,7 @@ export default function Footer() {
           <h6 className='font-bold text-gray-300'>Solutions</h6>
           <ul>
             <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Analytics</li>
-            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://klear.com/'>Influencer Marketing</Link></li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://klear.com/'target="blank">Influencer Marketing</Link></li>
             <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Commerce</li>
             <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Insights</li>
           </ul>
