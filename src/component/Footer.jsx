@@ -11,10 +11,10 @@ export default function Footer() {
         <div>
           <h6 className='font-bold text-gray-300'>Solutions</h6>
           <ul>
-            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Analytics</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://influencermarketinghub.com/'target="blank">Resources</Link></li>
             <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://klear.com/'target="blank">Influencer Marketing</Link></li>
-            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Commerce</li>
-            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'>Insights</li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://later.com/blog/'target="blank">Blogs</Link></li>
+            <li className='py-2 text-sm hover:text-green-500 cursor-pointer'><Link to='https://influencermarketingassociation.org/'target="blank">Industrial Associations</Link></li>
           </ul>
         </div>
 
