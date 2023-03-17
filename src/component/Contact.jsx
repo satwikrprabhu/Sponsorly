@@ -1,6 +1,12 @@
 import React from 'react';
 
-function Contactpage()  {
+function Contactpage() {
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    alert("Message has been sent!");
+  }
+
   return (
     <div className="bg-primary">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -10,7 +16,7 @@ function Contactpage()  {
               Get in touch
             </h2>
             <div className="mt-8 sm:max-w-lg">
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleFormSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-green-500" aria-setsize={6}>
                     Full name
