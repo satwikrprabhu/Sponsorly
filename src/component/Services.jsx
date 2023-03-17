@@ -19,7 +19,7 @@ const handleIconLeave = (e) => {
 
 
   return (
-    <div className="mx-auto max-w-9xl">
+    <div className="mx-auto max-w-full">
       <div className='sm:flex sm:flex-col sm:items-center flex-col'>
         <div className='text-white px-4 py-8 text-center sm:text-left'>
           <h1 className='text-4xl font-bold text-center'>Services</h1>
