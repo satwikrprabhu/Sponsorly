@@ -1,17 +1,43 @@
 import React, {useState} from 'react'
-
+import {useNavigate} from 'react-router-dom'
 const Signup = () => {
-   
+  
   const [user, setUser] = useState({
     name: "", email:"", password:"", cpassword:""
   })
-  let name,value;
-  const handleInputs = ()=>{
+  let name, value;
+  const handleInputs = (e)=>{
   console.log(e)
-  name = e.target.name;
+  name=e.target.name;
   value=e.target.value;
 
-  setUser(...user, {[name]:value})
+  setUser({...user,[name]:value})
+  }
+
+  const PostData = async (e)=>{
+    e.preventDefault();
+    const {name,email,password,cpassword} = user;
+    let res = await fetch("/register",{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify({
+        name,email,password,cpassword
+      })
+    });
+
+    res = await res.json();
+    const navigate = useNavigate();
+    if(data.status===422 || !data){
+      window.alert("Invalid Registration");
+      console.log("Invalid Registration");
+    }
+    else{
+      window.alert("Registration Successful")
+      console.log("Succesful Registration");
+      navigate("../login", { replace: true });
+    }
   }
 
   return (
@@ -23,7 +49,7 @@ const Signup = () => {
         Sign Up
         </h2>
         <div className="mt-8 sm:max-w-lg">
-          <form className="space-y-6">
+          <form className="space-y-6" method='POST'>
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-green-500" aria-setsize={6}>
                 Full name
@@ -89,12 +115,12 @@ const Signup = () => {
               </div>
             </div>
             <div>
-              <button
+              <input
                 type="submit"
+                value='Signup'
+                onClick={PostData}
                 className="inline-flex items-center px-5 py-2 border border-transparent text-base font-semibold rounded-full text-black bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-              >
-                Submit
-              </button>
+              />
             </div>
           </form>
         </div>
