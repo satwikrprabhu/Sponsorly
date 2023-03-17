@@ -52,14 +52,13 @@ const Login = () => {
                     <h3 className='text-green-500 font-semibold text-right text-[.85rem] mt-[.3rem]'>Don't have an Account? <Link to='../signup' className='font-bold'>SignUp</Link></h3>
                   </div>
                   <div>
-                    <button
-                      type="submit"
-                      className="inline-flex items-center px-5 py-1 border border-transparent text-base font-semibold rounded-full text-black bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-                    >
-                      Login
-                    </button>
                   </div>
                 </form>
+                    <button
+                      
+                      className="inline-flex items-center px-5 py-1 border border-transparent text-base font-semibold rounded-full text-black bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                    ><Link to='../welcome'>Login</Link>
+                    </button>
                 {/* <hr className='mt-8'/>
                 <h2 className='text-white text-lg text-center mt-4'>OR</h2> */}
               </div>

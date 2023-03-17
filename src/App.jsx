@@ -8,6 +8,9 @@ import Error from './component/Error'
 import {Route,Routes} from 'react-router-dom'
 import Login from './component/Login'
 import Signup from './component/Signup'
+import Search from './component/Search'
+import ProfileList from './component/ProfileList'
+import Companylist from './component/CompanyList'
 const App = () => {
   return (<>
     <Navbar/>
@@ -18,6 +21,10 @@ const App = () => {
     <Route path='/services' element={<Services/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/signup' element={<Signup/>}/>
+    <Route path='/welcome' element={<Search/>}/>
+    <Route path='/inf' element={<ProfileList/>}/>
+    <Route path='/adv' element={<Companylist/>}/>
+
     <Route path='*' element={<Error/>}/>
     </Routes>
    </>
