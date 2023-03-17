@@ -7,6 +7,7 @@ import Services from './component/Services'
 import Error from './component/Error'
 import {Route,Routes} from 'react-router-dom'
 import Login from './component/Login'
+import Signup from './component/Signup'
 const App = () => {
   return (<>
     <Navbar/>
@@ -16,6 +17,7 @@ const App = () => {
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/services' element={<Services/>}/>
     <Route path='/login' element={<Login/>}/>
+    <Route path='/signup' element={<Signup/>}/>
     <Route path='*' element={<Error/>}/>
     </Routes>
    </>

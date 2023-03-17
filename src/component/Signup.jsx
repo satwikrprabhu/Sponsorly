@@ -1,13 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Signup = () => {
+   
+  const [user, setUser] = useState({
+    name: "", email:"", password:"", cpassword:""
+  })
+  let name,value;
+  const handleInputs = ()=>{
+  console.log(e)
+  name = e.target.name;
+  value=e.target.value;
+
+  setUser(...user, {[name]:value})
+  }
+
   return (
     <div className="bg-primary">
   <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="lg:grid lg:grid-cols-2 lg:gap-8">
       <div>
         <h2 className="text-3xl font-extrabold text-green-500 sm:text-4xl">
-        Join Our Community
+        Sign Up
         </h2>
         <div className="mt-8 sm:max-w-lg">
           <form className="space-y-6">
@@ -22,6 +35,8 @@ const Signup = () => {
                   id="name"
                   autoComplete="name"
                   className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  value={user.name}
+                  onChange={handleInputs}
                 />
               </div>
             </div>
@@ -35,6 +50,8 @@ const Signup = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
+                  value={user.email}
+                  onChange={handleInputs}
                   className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 />
               </div>
@@ -49,6 +66,8 @@ const Signup = () => {
                   name="password"
                   type="password"
                   autoComplete="current-password"
+                  value={user.password}
+                  onChange={handleInputs}
                   className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 />
               </div>
@@ -59,10 +78,12 @@ const Signup = () => {
               </label>
               <div className="mt-1">
                 <input
-                  id="confirmPassword"
-                  name="confirmPassword"
+                  id="cpassword"
+                  name="cpassword"
                   type="password"
                   autoComplete="current-password"
+                  value={user.cpassword}
+                  onChange={handleInputs}
                   className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 />
               </div>
