@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from "react";
+import axios from "axios";
 
-function Contactpage() {
+function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [sent, setSent] = useState(false);
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
-    alert("Message has been sent!");
-  }
+    const data = {
+      name,
+      email,
+      message,
+    };
+    try {
+      await axios.post("https://formspree.io/f/xwkjqgng", data);
+      setSent(true);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="bg-primary">
@@ -28,6 +43,8 @@ function Contactpage() {
                       id="name"
                       autoComplete="name"
                       className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                 </div>
@@ -42,6 +59,8 @@ function Contactpage() {
                       type="email"
                       autoComplete="email"
                       className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                 </div>
@@ -55,6 +74,8 @@ function Contactpage() {
                       name="message"
                       rows="4"
                       className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
                 </div>
@@ -66,16 +87,17 @@ function Contactpage() {
                     Send
                   </button>
                 </div>
-              </form>
+              </form><br/>
+              {sent && <p className="text-green-500">Thank you for contacting us!</p>}
             </div>
-          </div>
-          <div className="mt-12 lg:mt-0">
-            <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://i.postimg.cc/yYXv6V3p/DALL-E-2023-03-04-12-14-46-Create-an-image-of-a-group-of-influencers-using-social-media-to-promote.png" alt="Contact us" />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+            <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://i.postimg.cc/Xq4VnDK0/Whats-App-Image-2023-03-17-at-11-56-12-removebg-preview.png" alt="Contact us" />
+            </div>
+            </div>
+            </div>
+            </div>
+            );
+          };
 
-export default Contactpage;
+
+          export default Contact
+
