@@ -203,7 +203,7 @@ function ProfileList() {
       <h1 className="text-3xl font-bold mb-4 text-green-500">Influencers list</h1>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         {profiles.map((profile) => (
-          <li key={profile.id} className="bg-green-500 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
+          <li key={profile.id} className="bg-green-200 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
             <img
               className="w-24 h-24 object-cover rounded-full mx-auto mt-4 hover:scale-110"
               src={profile.imageUrl}
